@@ -1,0 +1,672 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  overflow: auto; /* Permitir desplazamiento */
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px; /* Aumenté el padding vertical para más espacio */
+}
+
+/* Sección 1: Revolución Laboral con IA */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.hero-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  width: 50%;
+}
+
+.right-section {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.industry-tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #e0e0e0;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.1;
+}
+
+h1 span {
+  color: #1a1a1a;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+  margin: 40px 0; /* Aumenté el margen para más separación */
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin: 50px 0; /* Aumenté el margen para más separación */
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.btn-secondary:hover {
+  background-color: #f0f0f0;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+.trust-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+  margin: 30px 0; /* Aumenté el margen para más separación */
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+  margin-right: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.placeholder-image {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-icon {
+  font-size: 30px;
+  color: #666;
+}
+
+.radial-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 60%, #d0d0d0 61%, transparent 62%),
+              conic-gradient(
+                  transparent 0deg 30deg, #d0d0d0 30deg 60deg,
+                  transparent 60deg 90deg, #d0d0d0 90deg 120deg,
+                  transparent 120deg 150deg, #d0d0d0 150deg 180deg,
+                  transparent 180deg 210deg, #d0d0d0 210deg 240deg,
+                  transparent 240deg 270deg, #d0d0d0 270deg 300deg,
+                  transparent 300deg 330deg, #d0d0d0 330deg 360deg
+              );
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+/* Nueva Sección: Tarjeta de Capacitación */
+.home-card-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.home-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.home-card-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 10px;
+}
+
+.home-card-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.home-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.home-card-content {
+  margin-bottom: 20px;
+}
+
+.home-card-content p {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 20px;
+}
+
+.home-card-divider {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.home-card-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 10px;
+}
+
+.home-card-list {
+  list-style: none;
+  padding: 0;
+}
+
+.home-card-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.home-card-icon {
+  color: #4caf50;
+  font-size: 20px;
+}
+
+.home-card-list span {
+  font-size: 16px;
+  color: #666;
+}
+
+.home-card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-accent {
+  background-color: #ff4081;
+  color: #fff;
+}
+
+.btn-accent:hover {
+  background-color: #e73574;
+}
+
+/* Sección 2: Soluciones Innovadoras de Capacitación */
+.solutions-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-link {
+  display: inline-block;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
+
+.solutions-section h2 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.solutions-section p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  text-align: left;
+}
+
+.card-icon {
+  font-size: 30px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+.card-link {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* Sección 3: Testimonios */
+.testimonials-section {
+  padding: 60px 0;
+  background-color: #f5f5f5; /* Fondo gris claro como en la imagen */
+}
+
+.testimonials-section .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonials-section h2 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.testimonials-section p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0 0;
+}
+
+.testimonial-image {
+  width: 60px;
+  height: 60px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-title {
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0 10px;
+}
+
+.testimonial-quote {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Sección 4: Demo Interactivo */
+.demo-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.demo-section .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.demo-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.demo-left {
+  width: 60%;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-btn.active {
+  background-color: #e0e0e0;
+  border-color: #999;
+}
+
+.demo-description {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.demo-description h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 10px;
+}
+
+.demo-description p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.demo-btn {
+  margin-top: 20px;
+}
+
+.demo-chat {
+  width: 35%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.chat-header {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.chat-messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.chat-message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.chat-message.assistant {
+  background-color: #f0f0f0;
+  align-self: flex-start;
+}
+
+.chat-message.user {
+  background-color: #000;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chat-input button:hover {
+  background-color: #999;
+}
+
+/* Sección 5: Preparar para el Futuro */
+.future-section {
+  padding: 60px 0;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+}
+
+.future-section h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0 0 20px;
+}
+
+.future-section p {
+  font-size: 18px;
+  color: #ccc;
+  margin: 0 0 40px;
+}
+
+.future-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-future {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-future:hover {
+  background-color: #e0e0e0;
+}
+
+/* Pie de Página Detallado */
+.detailed-footer {
+  background-color: #fff;
+  padding: 40px 0;
+  color: #333;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  width: 22%;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #666;
+  font-size: 18px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #666;
+}
+
+.language-switch a {
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.language-switch a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de Chat */
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}

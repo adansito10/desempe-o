@@ -1,0 +1,21 @@
+mat-card {
+    max-width: 600px;
+    margin: 20px auto;
+    color: white; /* Cambia el color del texto a blanco */
+
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white; /* Cambia el color del texto a blanco */
+
+  }
+  mat-form-field {
+    width: 100%;
+    color: white; /* Cambia el color del texto a blanco */
+
+  }
+  button {
+    align-self: flex-start;
+  }

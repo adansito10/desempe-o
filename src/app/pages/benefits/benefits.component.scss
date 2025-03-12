@@ -1,0 +1,17 @@
+mat-card {
+  max-width: 600px;
+  margin: 20px auto;
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+mat-grid-tile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+mat-icon {
+  font-size: 24px;
+  color: white; /* Cambia el color del icono a blanco */
+}
